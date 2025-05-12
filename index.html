@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Regalo Día de la Madre</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
     body {
       margin: 0;
@@ -24,12 +24,13 @@
 
     .card {
       background-color: white;
-      padding: 20px;
-      margin: 10px;
+      padding: 25px;
+      margin: 15px auto;
       border-radius: 20px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       animation: fadeIn 1s ease;
+      max-width: 600px;
     }
 
     .card:hover {
@@ -66,7 +67,7 @@
     }
 
     #cat-image {
-      width: 280px;
+      width: 300px;
       max-width: 100%;
       transition: transform 0.3s ease;
     }
@@ -80,7 +81,7 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 30px;
       margin-top: 40px;
     }
 
@@ -97,7 +98,8 @@
       justify-content: center;
       align-items: center;
       flex: 1;
-      min-width: 260px;
+      min-width: 300px;
+      padding: 10px;
     }
 
     @keyframes bounce {
@@ -110,32 +112,33 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
+      from { opacity: 0; transform: scale(0.9); }
       to { opacity: 1; transform: scale(1); }
     }
 
-    /* 📱 Responsive para móviles */
+    /* 📱 Estilos Responsive */
     @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
       .text-image-layout {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
       }
 
-      .card p {
-        font-size: 16px;
-      }
-
-      #gift {
-        width: 200px;
-      }
-
-      #cat-image {
-        width: 200px;
+      .side-texts {
+        align-items: center;
+        text-align: center;
       }
 
       .card {
-        margin: 10px auto;
-        width: 95%;
+        width: 90%;
+      }
+
+      #cat-image {
+        width: 180px;
+        margin: 20px auto;
       }
     }
   </style>
@@ -145,7 +148,7 @@
     <div id="initial-section">
       <div class="card">
         <p>Feliz día de la madre, para ti que eres mi segunda mamá favorita,<br>
-        la primera claramente es tu futura suegra 😅.</p>
+        la primera claramente es tu futura suegra. 😜</p>
         <p><strong>Pulsa encima para abrir tu regalo</strong></p>
       </div>
       <img id="gift" src="img/Regalo.png" alt="Regalo" title="Haz clic para abrir">
@@ -160,7 +163,7 @@
         <!-- Lado Izquierdo -->
         <div class="side-texts">
           <div class="card">
-            <p>Te quiero un montón. Si me preguntaran cuánto, diría que es inefable, porque lo que siento por ti es muy real. Gracias por todo y deseo que siempre tu vida esté llena de bendiciones y puedas cumplir tus sueños. Si puedo acompañarte en este proceso estaría más que contento, porque sé que serás una gran Chef y cumplirás todos tus sueños y metas porque eres capaz de eso y más.</p>
+            <p>Estoy orgulloso de la grandiosa madre que eres para Chris y sé que ha sido un trabajo que no es sencillo pero lo has hecho muy bien.</p>
           </div>
           <div class="card">
             <p>Realmente agradezco mucho a la vida porque te cruzaras en mi camino, porque has sido un mar de emociones que me ha fascinado vivir.</p>
@@ -175,10 +178,10 @@
         <!-- Lado Derecho -->
         <div class="side-texts">
           <div class="card">
-            <p>Estoy orgulloso de la grandiosa madre que eres para Chris y sé que ha sido un trabajo que no es sencillo pero lo has hecho muy bien.</p>
+            <p>Tú eres mi elección que tomaría sin arrepentirme esta vida y otras si existiera la posibilidad. Agradezco que tuvieras la confianza de contarme de Chris y siempre estoy agradecido por poder compartir mis días hablando contigo.</p>
           </div>
           <div class="card">
-            <p>Tú eres mi elección que tomaría sin arrepentirme esta vida y otras si existiera la posibilidad. Agradezco que tuvieras la confianza de contarme de Chris y siempre estoy agradecido por poder compartir mis días hablando contigo.</p>
+            <p>Te quiero un montón. Si me preguntaran cuánto, diría que es inefable, porque lo que siento por ti es muy real. Gracias por todo y deseo que siempre tu vida esté llena de bendiciones y puedas cumplir tus sueños. Si puedo acompañarte en este proceso estaría más que contento, porque sé que serás una gran Chef y cumplirás todos tus sueños y metas porque eres capaz de eso y más.</p>
           </div>
         </div>
       </div>
